@@ -16,4 +16,4 @@ Please try to Stick on with the version provided as much as possible other-wise 
 		Tensorflow has an amazing documentation [here](https://www.tensorflow.org/install/pip)
 
 ## Output
-![Alt Text]https://github.com/ambakick/Person-Detection-and-Tracking/blob/master/person%20detection%20and%20track.gif)
+![Alt Text](https://github.com/ambakick/Person-Detection-and-Tracking/blob/master/person%20detection%20and%20track.gif)
