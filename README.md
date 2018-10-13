@@ -18,15 +18,15 @@ Please try to Stick on with the version provided as much as possible other-wise 
 ## Methodology / Approach
 The method Proposed here is divided into 2 main parts
 
-* **Person Detection* ** - The person detection in Real-time is done with the help of Single Shot MultiBox Detector. SSD achieves 75.1%
+* Person Detection - The person detection in Real-time is done with the help of Single Shot MultiBox Detector. SSD achieves 75.1%
 	mAP, outperforming a comparable state of the art Faster R-CNN model. and the SSD model is available in the Tensorflow detection
 	zoo. The seamless integration of SSD with tensorflow helps in further optimization and implementation of the algorithm.
 	The SSD object detection composes of 2 parts:
-	* ** Extract feature maps, and * **
-	* ** Apply convolution filters to detect objects.* **
+	* Extract feature maps, and 
+	* Apply convolution filters to detect objects.
 	Even though SSD is capable of detecting multiple objects in the frame, in this project I limited its detection to just human.
 
-* **Person Tracking* ** - Bounding box can be achieved around the object/person by running the Object Detection model in every frame, but this is computationally expensive.
+* Person Tracking - Bounding box can be achieved around the object/person by running the Object Detection model in every frame, but this is computationally expensive.
 	The tracking algorithm used here is Kalman Filtering . The Kalman Filter has long been regarded as the optimal solution to many tracking and data prediction tasks. Its use in the analysis of visual motion. The purpose of Filtering is to extract the required information from a signal, ignoring everything else. In this project the Kalman Filter is fed with the velocity, position and direction of the person which helps it to predict the future location of the Person based on his previous data.
 
 The tracking part still faces some problem at the time of an occlusion. (Working on it)
