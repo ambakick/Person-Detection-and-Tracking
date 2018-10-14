@@ -38,3 +38,18 @@ The tracking part still faces some problem at the time of an occlusion. (Working
 	* Intel i5 CPU	      -  ~10FPS
 ## Output
 ![Alt Text](https://github.com/ambakick/Person-Detection-and-Tracking/blob/master/person%20detection%20and%20track.gif)
+
+## Overview / Usage
+The system consist of two parts first human detection and secondly tracking. Early research is biased to human recognition rather than tracking. Monitoring the movements of human being raised the need for tracking. Monitoring movements are of high interest in determining the activities of a person and knowing the attention of person. This project focuses on Person Detection and tracking.
+
+Identity retrieval - Tracking of human being can be used as a prior step in biometric face recognition. Keeping continuous track
+of person will allow to identify person at any time. Thus even if his face identification is not possible at a particular set of frames
+his identity can be found out. This can be very useful in the case of anomaly detection as the person's face may not face to the
+camera when an anomaly is detected. So with the help of tracking his identity can be revealed.
+
+Reducing the computation power requirement - A normal objection detection algorithm just detects the Person but do not
+assign an Id for an Person thus has to be run in every frame to get the bounding box. Tracking will help to reduce the number of
+times the Detection algorithm has to be run i.e instead of running the Detection algorithm every frame we can run it once in
+every 5 frames.
+
+Object Detection model failure compensation - there might be some poses where SSD may not detect the person. Even occlusion can affect the detector to a significant level that is where tracking algorithm can be of great help to us.
