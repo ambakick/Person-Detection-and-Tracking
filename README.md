@@ -3,6 +3,8 @@
 ## Introduction
 The Project is based on Person Detection and tracking and I am mainly focusing on the Person tracking, if you go through the output gif in the README.md or watch output.mp4 you will be able to see that each person will be provided with an idea as soon as he enters a frame and the number remains with his regardless of the detection happening in concurrent frames. So basically the project focuses on Person Detection and track him as long as he remains in the frame.
 
+## Running
+### Run Person_det_track.py
 ### Person_det_track.py detects and tracks the person using SSD and Kalman Filter
 ## Requirements
 Please try to Stick on with the version provided as much as possible other-wise you will face compatibility issues. I have used the best combination possible during the time of coding.
