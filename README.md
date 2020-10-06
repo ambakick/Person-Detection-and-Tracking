@@ -56,3 +56,5 @@ times the Detection algorithm has to be run i.e instead of running the Detection
 every 5 frames.
 
 Object Detection model failure compensation - there might be some poses where SSD may not detect the person. Even occlusion can affect the detector to a significant level that is where tracking algorithm can be of great help to us.
+
+By Neeraj Menon
