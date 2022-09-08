@@ -1,7 +1,11 @@
 # Person-Detection-and-Tracking
 
 ## Introduction
-The Project is based on Person Detection and tracking and I am mainly focusing on the Person tracking, if you go through the output gif in the README.md or watch output.mp4 you will be able to see that each person will be provided with an idea as soon as he enters a frame and the number remains with his regardless of the detection happening in concurrent frames. So basically the project focuses on Person Detection and tracks him as long as he remains in the frame.
+The Project is based on Person Detection and tracking and I am mainly focusing on the Person tracking. As shown in the output gif in the README.md or the output.mp4 each person will be provided with an `id` as soon as he enters a frame and the `id` is maintained regardless of the detection happening in concurrent frames. The algorithm does Person Detection and tracks him as long as he remains in the frame.
+
+## Output
+![Alt Text](https://github.com/ambakick/Person-Detection-and-Tracking/blob/master/person%20detection%20and%20track.gif)
+
 
 ## For executing
 ### Run Person_det_track.py
@@ -39,22 +43,14 @@ The tracking part still faces some problems at the time of occlusion. (Working o
 	* Nvidia Quadro 4000  -  ~30FPS
 	* Nvidia Jetson TX2   -  ~20FPS
 	* Intel i5 CPU	      -  ~10FPS
-## Output
-![Alt Text](https://github.com/ambakick/Person-Detection-and-Tracking/blob/master/person%20detection%20and%20track.gif)
 
 ## Overview / Usage
-The system consists of two parts first human detection and secondly tracking. Early research is biased to human recognition rather than tracking. Monitoring the movements of a human being raised the need for tracking. Monitoring movements are of high interest in determining the activities of a person and knowing the attention of a person. This project focuses on Person Detection and tracking.
+The system consists of two parts first, human detection, and secondly tracking. Early research was biased toward human recognition rather than tracking. Monitoring the movements of a human being raised the need for tracking. Monitoring movements are of high interest in determining the activities of a person and the attention of a person.
 
-Identity retrieval - Tracking of a human being can be used as a prior step in biometric face recognition. Keeping continuous track
-of a person will allow to identify person at any time. Thus even if his face identification is not possible at a particular set of frames
-his identity can be found out. This can be very useful in the case of anomaly detection as the person's face may not face the
-camera when an anomaly is detected. So with the help of tracking his identity can be revealed.
+Reducing the computation power requirement - A normal objection detection algorithm detects the Object but does not track (assign an Id) an Object across frames; thus has to be run in every frame to get the bounding box. Tracking will help to reduce the number of
+times the Detection algorithm has to be run, i.e, instead of running the Detection algorithm every frame, this implementation runs detection every 5 frames.
 
-Reducing the computation power requirement - A normal objection detection algorithm just detects the Person but does not
-assign an Id for a Person thus has to be run in every frame to get the bounding box. Tracking will help to reduce the number of
-times the Detection algorithm has to be run i.e instead of running the Detection algorithm every frame we can run it once in
-every 5 frames.
+Object Detection model failure compensation - there might be some poses where SSD may not detect the person. Even occlusion can affect the detector significantly; that is where the tracking algorithm can greatly help us.
 
-Object Detection model failure compensation - there might be some poses where SSD may not detect the person. Even occlusion can affect the detector to a significant level that is where the tracking algorithm can be of great help to us.
-
+Identity retrieval - Tracking of a human being can be used as a prior step in biometric face recognition. Keeping continuous track of a person will allow identifying a person at any time. Even if face identification is not possible at a particular set of frames, his identity can be found tracking.
 By Neeraj Menon
