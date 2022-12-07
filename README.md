@@ -4,8 +4,7 @@
 The Project is based on Person Detection and tracking and I am mainly focusing on the Person tracking. As shown in the output gif in the README.md or the output.mp4 each person will be provided with an `id` as soon as he enters a frame and the `id` is maintained regardless of the detection happening in concurrent frames. The algorithm does Person Detection and tracks him as long as he remains in the frame.
 
 ## Output
-![Alt Text](https://github.com/ambakick/Person-Detection-and-Tracking/blob/master/person%20detection%20and%20track.gif)
-
+![Output](https://user-images.githubusercontent.com/24716987/206210324-d879e0d1-5e23-432f-a3f4-0e8033b38298.gif)
 
 ## For executing
 ### Run Person_det_track.py
